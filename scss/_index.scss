@@ -1,0 +1,101 @@
+#hero_home{
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+#estrenos{
+    @include dg1;
+    padding-top: $padd;
+    padding-bottom: $padd;
+    .titEst h2{
+        @include title;
+    }
+    .titEst h2:hover{
+        transform: translateY(60px);
+	    transition: all 1s ease-in-out;
+        text-decoration: line-through;
+    }
+    .textEst{
+        @include text;
+        span{
+            font-weight: $tbold;
+        }
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .boton1{
+        @include boton1;
+    }
+    @media (max-width:992px){
+        .titEst h2{
+            font-size: 4em;
+        }
+    }
+    @media (max-width:768px){
+        .textEst{
+            text-align: $tcenter;
+        }
+    }
+    @media (max-width: 576px){
+        .titEst h2{
+            font-size: 3em;
+        }
+        .textEst{
+            text-align: $tcenter;
+        }
+    }
+}
+#eventos{
+    background-color: $black;
+    padding-top: $padd;
+    padding-bottom: $padd;
+    .titEv h2{
+        @include title;
+        color:$white;
+    }
+    .titEv h2:hover{
+        transform: translateY(60px);
+	    transition: all 1s ease-in-out;
+        text-decoration: line-through;
+    }
+    .textEv{
+        @include text;
+        color:$white;
+        span{
+            font-weight: $tbold;
+        }
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    img:hover{
+        transform: rotate(45deg);
+        transition: all 1s ease-in-out;
+        box-shadow: 0 0 10px #ED213A;
+    }
+    .boton1{
+        @include boton1;
+    }
+    @media (max-width:992px){
+        .titEv h2{
+            font-size: 4em;
+        }
+    }
+    @media (max-width:768px){
+        .textEv{
+            text-align: $tcenter;
+        }
+    }
+    @media (max-width: 576px){
+        .titEv h2{
+            font-size: 3em;
+        }
+        .textEv{
+            text-align: $tcenter;
+        }
+    }
+}

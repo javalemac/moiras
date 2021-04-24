@@ -1,0 +1,36 @@
+#footer{
+    background-color: $red;
+    .row{
+        height:16em;
+    }
+    a{
+        color: $white;
+        font-weight: $tbold;
+        .iFace:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+        .iInsta:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+        .iTwit:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+        .iSpo:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+        .iYou:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+    }
+    @media (max-width: 576px){
+        .tContacto{
+            text-align: $tcenter;
+        }
+    }
+        
+}

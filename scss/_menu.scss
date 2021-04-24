@@ -1,0 +1,86 @@
+#header{
+    .pabMenu a{
+        color: $red;
+        font-weight: $tbold;
+        font-style: $titalic;
+        font-size: 2em;
+    }
+    @media (max-width: 576px){
+        .pabMenu a{
+            font-size: 1em;
+        }
+        .logo{
+            width: 70%;
+        }
+        .flechas{
+            width: 10%;
+        }
+    }
+    .tMusic:hover{
+        transform: scale(1.1);
+        transition: all 300ms ease-in-out;
+        text-decoration: line-through;
+    }
+    .tVideo:hover{
+        transform: scale(1.1);
+        transition: all 300ms ease-in-out;
+        text-decoration: line-through;
+    }
+}
+#menuModal{
+    .modal-content{
+        background-image: url(../media/moiras5.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:100vh;
+        .modal-header{
+            border-bottom: 0px;
+            .close{
+                background-color: $red;
+            }
+        }
+        .modal-body{
+            a{
+                text-decoration: none;
+                list-style: none;
+                color: #fff;
+                text-align: $tcenter;
+                font-size: 3em;
+                font-weight: $tbold;
+                letter-spacing: 0.2em;
+                font-style: $titalic; 
+            }
+        }
+        .inicio:hover{
+            text-shadow: 0 0 10px #FCFCFC;
+            transition: all 100ms ease-in-out;
+            text-decoration: line-through;
+        }
+        .musica:hover{
+            text-shadow: 0 0 10px #FCFCFC;
+            transition: all 100ms ease-in-out;
+            text-decoration: line-through;
+        }
+        .videos:hover{
+            text-shadow: 0 0 10px #FCFCFC;
+            transition: all 100ms ease-in-out;
+            text-decoration: line-through;
+        }
+        .moiras:hover{
+            text-shadow: 0 0 10px #FCFCFC;
+            transition: all 100ms ease-in-out;
+            text-decoration: line-through;
+        }
+        .store:hover{
+            text-shadow: 0 0 10px #FCFCFC;
+            transition: all 100ms ease-in-out;
+            text-decoration: line-through;
+        }
+        .contacto:hover{
+            text-shadow: 0 0 10px #FCFCFC;
+            transition: all 100ms ease-in-out;
+            text-decoration: line-through;
+        }
+    }
+}

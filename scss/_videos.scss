@@ -1,0 +1,18 @@
+#video{
+    .vidWhite{
+        @include bgVideo(bgvw)
+    }
+    .vidRed{
+        @include bgVideo(bgvr)
+    }
+    .row{
+        padding-top: $padd;
+        padding-bottom: $padd;
+    }
+    @media (max-width: 968px){
+        .textVideo{
+            text-align: $tcenter;
+        }
+    }
+        
+}

@@ -1,0 +1,85 @@
+body{
+    span{
+        font-weight: $tbold;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    h2{
+        @include text;
+        font-weight: $tbold;
+    }
+}
+#intro_musica{
+    transform: translateY(-40px);
+    .titMus{
+        @include title;
+        font-style: $titalic;
+        color: $red;
+        &:hover{
+            transform: skewY(10deg);
+            transition: all 300ms ease-in-out;
+        }
+    }
+    .textMus{
+        @include text;
+    }
+}
+#alb{
+    .albWhite{
+        @include bgMusica(bgw)
+    }
+    .albBlack{
+        @include bgMusica(bgb)
+    }
+    .row{
+        padding-top: $padd;
+        padding-bottom: $padd;
+    }
+    a{
+        .iconSpot1:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+        .iconBand1:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+        .iconYou1:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+    }
+    @media (max-width:992px){
+        .img-fluid{
+            width: 60%;
+        }
+        p{
+            text-align: $tcenter;
+        }
+        h2{
+            text-align: $tcenter;
+        }
+    }
+}
+.imgEfi:hover{
+    transform: scale(0.9);
+    transition: all 300ms ease-in-out;
+}
+.imgCham:hover{
+    transform: scale(0.9);
+    transition: all 300ms ease-in-out;
+}
+.imgHerb:hover{
+    transform: scale(0.9);
+    transition: all 300ms ease-in-out;
+}
+.imgNam:hover{
+    transform: scale(0.9);
+    transition: all 300ms ease-in-out;
+}
+.imgAta:hover{
+    transform: scale(0.9);
+    transition: all 300ms ease-in-out;
+}

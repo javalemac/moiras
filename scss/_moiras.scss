@@ -1,0 +1,70 @@
+#bgMoiras1{
+    .container-fluid{
+        background-image: url(../media/siberia6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:100vh;
+        .container{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .tbgMoiras1{
+            color: $white;
+            font-weight: $tbold;
+            text-align: $tcenter;
+            font-style: $titalic;
+        }
+    }
+}
+#triangulo{
+    @include dg1;
+    padding-top: $padd;
+    padding-bottom: $padd;
+    @media (max-width:992px){
+        p{
+            text-align: $tcenter;
+        }
+    }
+}
+#sliderMoiras{
+    background-color: $black;
+    padding-top: $padd;
+    padding-bottom: $padd;
+}
+#bgMoiras2{
+    .container-fluid{
+        background-image: url(../media/siberia1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:100vh;
+        .container{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .boton1{
+            @include boton1;
+        }
+        .boton2{
+            @include boton2;
+        }
+    }
+}
+.imgCir:hover{
+    transform: scale(0.9);
+    transition: all 300ms ease-in-out;
+}
+.imgTri:hover{
+    transform: scale(0.9);
+    transition: all 300ms ease-in-out;
+}
+.tbgmoiras:hover{
+    background-color: $red;
+    transform: skewX(-20deg);
+    transition: all 300ms ease-in-out;
+}

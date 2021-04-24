@@ -1,0 +1,702 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;700&display=swap");
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#header .pabMenu a {
+  color: #ED213A;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2em;
+}
+
+@media (max-width: 576px) {
+  #header .pabMenu a {
+    font-size: 1em;
+  }
+  #header .logo {
+    width: 70%;
+  }
+  #header .flechas {
+    width: 10%;
+  }
+}
+
+#header .tMusic:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-decoration: line-through;
+}
+
+#header .tVideo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-decoration: line-through;
+}
+
+#menuModal .modal-content {
+  background-image: url(../media/moiras5.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#menuModal .modal-content .modal-header {
+  border-bottom: 0px;
+}
+
+#menuModal .modal-content .modal-header .close {
+  background-color: #ED213A;
+}
+
+#menuModal .modal-content .modal-body a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-style: italic;
+}
+
+#menuModal .modal-content .inicio:hover {
+  text-shadow: 0 0 10px #FCFCFC;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  text-decoration: line-through;
+}
+
+#menuModal .modal-content .musica:hover {
+  text-shadow: 0 0 10px #FCFCFC;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  text-decoration: line-through;
+}
+
+#menuModal .modal-content .videos:hover {
+  text-shadow: 0 0 10px #FCFCFC;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  text-decoration: line-through;
+}
+
+#menuModal .modal-content .moiras:hover {
+  text-shadow: 0 0 10px #FCFCFC;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  text-decoration: line-through;
+}
+
+#menuModal .modal-content .store:hover {
+  text-shadow: 0 0 10px #FCFCFC;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  text-decoration: line-through;
+}
+
+#menuModal .modal-content .contacto:hover {
+  text-shadow: 0 0 10px #FCFCFC;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  text-decoration: line-through;
+}
+
+#footer {
+  background-color: #ED213A;
+}
+
+#footer .row {
+  height: 16em;
+}
+
+#footer a {
+  color: #fff;
+  font-weight: 700;
+}
+
+#footer a .iFace:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#footer a .iInsta:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#footer a .iTwit:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#footer a .iSpo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#footer a .iYou:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 576px) {
+  #footer .tContacto {
+    text-align: center;
+  }
+}
+
+#hero_home img {
+  max-width: 100%;
+  height: auto;
+}
+
+#estrenos {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cb356b), to(#bd3f32));
+  background: linear-gradient(180deg, #cb356b 0%, #bd3f32 100%);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#estrenos .titEst h2 {
+  font-weight: 700;
+  font-size: 5em;
+  line-height: 1em;
+}
+
+#estrenos .titEst h2:hover {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-decoration: line-through;
+}
+
+#estrenos .textEst {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+#estrenos .textEst span {
+  font-weight: 700;
+}
+
+#estrenos img {
+  max-width: 100%;
+  height: auto;
+}
+
+#estrenos .boton1 {
+  color: #FFFFFF;
+  padding: 1em;
+  border: none;
+  background-color: #ED213A;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#estrenos .boton1:hover {
+  background-color: #a82736;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 992px) {
+  #estrenos .titEst h2 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 768px) {
+  #estrenos .textEst {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #estrenos .titEst h2 {
+    font-size: 3em;
+  }
+  #estrenos .textEst {
+    text-align: center;
+  }
+}
+
+#eventos {
+  background-color: #000;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#eventos .titEv h2 {
+  font-weight: 700;
+  font-size: 5em;
+  line-height: 1em;
+  color: #fff;
+}
+
+#eventos .titEv h2:hover {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-decoration: line-through;
+}
+
+#eventos .textEv {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #fff;
+}
+
+#eventos .textEv span {
+  font-weight: 700;
+}
+
+#eventos img {
+  max-width: 100%;
+  height: auto;
+}
+
+#eventos img:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-box-shadow: 0 0 10px #ED213A;
+          box-shadow: 0 0 10px #ED213A;
+}
+
+#eventos .boton1 {
+  color: #FFFFFF;
+  padding: 1em;
+  border: none;
+  background-color: #ED213A;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#eventos .boton1:hover {
+  background-color: #a82736;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 992px) {
+  #eventos .titEv h2 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 768px) {
+  #eventos .textEv {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #eventos .titEv h2 {
+    font-size: 3em;
+  }
+  #eventos .textEv {
+    text-align: center;
+  }
+}
+
+body span {
+  font-weight: 700;
+}
+
+body img {
+  max-width: 100%;
+  height: auto;
+}
+
+body h2 {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.6em;
+  font-weight: 700;
+}
+
+#intro_musica {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+#intro_musica .titMus {
+  font-weight: 700;
+  font-size: 5em;
+  line-height: 1em;
+  font-style: italic;
+  color: #ED213A;
+}
+
+#intro_musica .titMus:hover {
+  -webkit-transform: skewY(10deg);
+          transform: skewY(10deg);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#intro_musica .textMus {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+#alb .albWhite {
+  background-color: #fff;
+}
+
+#alb .albBlack {
+  background-color: #000;
+  color: #fff;
+}
+
+#alb .row {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#alb a .iconSpot1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#alb a .iconBand1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#alb a .iconYou1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 992px) {
+  #alb .img-fluid {
+    width: 60%;
+  }
+  #alb p {
+    text-align: center;
+  }
+  #alb h2 {
+    text-align: center;
+  }
+}
+
+.imgEfi:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.imgCham:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.imgHerb:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.imgNam:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.imgAta:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#video .vidWhite {
+  background-color: #fff;
+}
+
+#video .vidRed {
+  background-color: #000;
+  color: #fff;
+}
+
+#video .row {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 968px) {
+  #video .textVideo {
+    text-align: center;
+  }
+}
+
+#bgMoiras1 .container-fluid {
+  background-image: url(../media/siberia6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#bgMoiras1 .container-fluid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bgMoiras1 .container-fluid .tbgMoiras1 {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  font-style: italic;
+}
+
+#triangulo {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cb356b), to(#bd3f32));
+  background: linear-gradient(180deg, #cb356b 0%, #bd3f32 100%);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 992px) {
+  #triangulo p {
+    text-align: center;
+  }
+}
+
+#sliderMoiras {
+  background-color: #000;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#bgMoiras2 .container-fluid {
+  background-image: url(../media/siberia1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#bgMoiras2 .container-fluid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bgMoiras2 .container-fluid .boton1 {
+  color: #FFFFFF;
+  padding: 1em;
+  border: none;
+  background-color: #ED213A;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#bgMoiras2 .container-fluid .boton1:hover {
+  background-color: #a82736;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#bgMoiras2 .container-fluid .boton2 {
+  color: #FFFFFF;
+  padding: 1em;
+  background-color: #202020;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#bgMoiras2 .container-fluid .boton2:hover {
+  background-color: #050505;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.imgCir:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.imgTri:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.tbgmoiras:hover {
+  background-color: #ED213A;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#sliderStore .boton2 {
+  color: #FFFFFF;
+  padding: 1em;
+  background-color: #202020;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#sliderStore .boton2:hover {
+  background-color: #050505;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#contacto .container-fluid {
+  background-image: url(../media/bg_contacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#contacto .container-fluid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contacto .container-fluid .container .boton1 {
+  color: #FFFFFF;
+  padding: 1em;
+  border: none;
+  background-color: #ED213A;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#contacto .container-fluid .container .boton1:hover {
+  background-color: #a82736;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#contacto .container-fluid .container p {
+  font-weight: 700;
+}
+
+#respuesta .modal-content {
+  background-image: url(../media/bg_respuesta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#respuesta .modal-content .modal-header {
+  border-bottom: 0px;
+}
+
+#respuesta .modal-content .modal-header .close {
+  background-color: #ED213A;
+}
+
+#respuesta .modal-content .modal-body h2 {
+  color: #000;
+  font-size: 3em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#respuesta .modal-content .modal-body p {
+  background-color: #fff;
+}
+
+@media (max-width: 567px) {
+  #respuesta .modal-content .modal-body {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

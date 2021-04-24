@@ -1,0 +1,60 @@
+@mixin text {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+@mixin title {
+    font-weight: 700;
+    font-size: 5em;
+    line-height: 1em;
+}
+@mixin dg1 {
+    background: linear-gradient(180deg, rgba(203,53,107,1) 0%, rgba(189,63,50,1) 100%);
+}
+@mixin boton1 {
+    color: #FFFFFF;
+	padding: 1em;
+	border: none;
+	background-color: #ED213A;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	font-weight: $tbold;
+	font-style: $titalic;
+	&:hover{
+		background-color: #a82736;
+		transform: scale(1.1);
+		transition: all 300ms ease-in-out;
+	}
+}
+@mixin boton2 {
+    color: #FFFFFF;
+	padding: 1em;
+	background-color: #202020;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	font-weight: $tbold;
+	font-style: $titalic;
+	&:hover{
+		background-color: #050505;
+		transform: scale(1.1);
+		transition: all 300ms ease-in-out;
+	}
+}
+@mixin bgMusica($bg) {
+	@if ($bg == bgw) {
+		background-color: $white;
+	}@else if ($bg == bgb){
+		background-color: $black;
+		color: $white;
+	}
+}
+@mixin bgVideo($bgv) {
+	@if ($bgv == bgvw){
+		background-color: $white;
+	}@else if ($bgv == bgvr){
+		background-color: $black;
+		color: $white;
+	}
+}

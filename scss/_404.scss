@@ -1,0 +1,39 @@
+#mensaje404{
+    .container-fluid{
+        background-image: url(../media/bg_404.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:100vh;
+        .container{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            h1{
+                @include title;
+                font-style: $titalic;
+                text-align: $tcenter;
+                text-decoration: none;
+                color: $white;
+            }
+            p{
+                text-align: $tcenter;
+            }
+            .boton1{
+                @include boton1;
+            }
+            .texto404:hover{
+                text-shadow: 0 0 10px #FCFCFC;
+                transition: all 1s ease-in-out;
+                text-decoration: line-through;
+                -moz-transform: rotate(180deg) skewY(30deg);
+                -webkit-transform: rotate(180deg) skewY(30deg);
+                -o-transform: rotate(180deg) skewY(30deg);
+                -ms-transform: rotate(180deg) skewY(30deg);
+                transform: rotate(180deg) skewY(30deg);
+            }
+        }
+    }
+}

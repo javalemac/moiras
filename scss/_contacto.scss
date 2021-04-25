@@ -1,4 +1,10 @@
 #contacto{
+    form{
+        color: $white;
+        h1{
+            font-weight: $tbold;
+        }
+    }
     .container-fluid{
         background-image: url(../media/bg_contacto.jpg);
         background-repeat: no-repeat;

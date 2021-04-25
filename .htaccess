@@ -1,0 +1,17 @@
+# HTID:17343775: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:17343775:
+
+Options FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^inicio$ index.html [L]
+RewriteRule ^musica$ musica.html [L]
+RewriteRule ^videos$ videos.html [L]
+RewriteRule ^moiras$ moiras.html [L]
+RewriteRule ^store$ store.html [L]
+RewriteRule ^contacto$ contacto.html [L]
+
+
+DirectoryIndex index.html
+ErrorDocument 404 /404.html

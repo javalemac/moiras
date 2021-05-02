@@ -50,6 +50,9 @@
                     @media (max-width: 567px){
                         text-align: $tcenter
                     }
+                    .boton1{
+                        @include boton1;
+                    }
                 }
             }  
     }

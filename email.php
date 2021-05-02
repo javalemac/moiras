@@ -15,15 +15,15 @@ try {
     //Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'c2191146.ferozo.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'test@c2191146.ferozo.com';                     //SMTP username
-    $mail->Password   = 'Camada@15810';                         //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 465;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Username   = 'moirasx@gmail.com';                     //SMTP username
+    $mail->Password   = 'moiras1234';                         //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('test@c2191146.ferozo.com', 'Camada 15810'); // Hacer coincidir con el username. (preferentemente)
+    $mail->setFrom('moirasx@gmail.com', 'MOIRAS'); // Hacer coincidir con el username. (preferentemente)
     $mail->addAddress('moirasx@gmail.com', 'MOIRAS');     //Add a recipient
     //$mail->addAddress('ellen@example.com');               //Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
@@ -36,7 +36,7 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Consulta de: '.$_POST['inp_nombre'];
+    $mail->Subject = 'PHPMailer GMail SMTP test';
     $mail->Body    = 'Nombre: '.$_POST['inp_nombre'].'<br>Email: '.$_POST['inp_email'].'<br>Mensaje: '.$_POST['inp_mensaje'].'<br>Store: '.$_POST['inp_store'];
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 

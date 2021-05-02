@@ -26,31 +26,31 @@
     }
 }
 #respuesta{
-    .modal-content{
+    .container-fluid{
         background-image: url(../media/bg_respuesta.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         height:100vh;
-        .modal-header{
-            border-bottom: 0px;
-            .close{
-                background-color: $red;
-            }
-        }
-    .modal-body{
-        h2{
-            color: $black;
-            font-size: 3em;
-            font-weight: $tbold;
-            font-style: $titalic;  
-        }
-        p{
-            background-color: $white;
-        }
-        @media (max-width: 567px){
-            text-align: $tcenter
-        }
-    }
+        .container{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+                .tRespuesta{
+                    h2{
+                        color: $black;
+                        font-size: 3em;
+                        font-weight: $tbold;
+                        font-style: $titalic;  
+                    }
+                    p{
+                        background-color: $white;
+                    }
+                    @media (max-width: 567px){
+                        text-align: $tcenter
+                    }
+                }
+            }  
     }
 }

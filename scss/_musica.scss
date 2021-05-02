@@ -25,6 +25,12 @@ body{
     .textMus{
         @include text;
     }
+    @media (max-width:568px){
+        transform: translateY(20px);
+        .titMus{
+            font-size: 3em;
+        }
+    }
 }
 #alb{
     .albWhite{

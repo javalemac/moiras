@@ -45,7 +45,7 @@
         <!--modal-->
         <div class="modal fade modal-fullscreen" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-content lazy">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -76,8 +76,8 @@
     <section id="hero_musica">
         <div class="container-fluid">
             <div class="row">
-                <div>
-                    <img class="img-fluid" src="media/bg_videos.jpg" alt="musica">
+                <div class="d-flex justify-content-center">
+                    <img class="img-fluid lazy" src="media/bg_videos.jpg" loading="lazy" alt="musica">
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
             <div class="container">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9 col-lg-8">
-                        <iframe class="embed-responsive-item pb-4" src="https://www.youtube.com/embed/v4oTCrp9foE" loading="lazy" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item pb-4 lazy" data-src="https://www.youtube.com/embed/v4oTCrp9foE" loading="lazy" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-4 textVideo">
                         <h2>Efí Butón</h2> <p>Grabada por MOIRAS el 12 de septiembre de 2020 en los estudios La Coneja Ciega, Bogotá, Colombia. Batería ∙ Danny Aranguren / Bajo ∙ Michael Martínez / Guitarra, Voz ∙ Javier Alemán / Producción sonora ∙ Estudios La Coneja Ciega / Dirección ∙ Coito Producciones. Agradecimientos a Juan Rojas y Terence Mckenna. 2020, MOIRAS℗ todos los derechos reservados.</p>
@@ -117,7 +117,7 @@
             <div class="container">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9 col-lg-8">
-                        <iframe class="embed-responsive-item pb-4" src="https://www.youtube.com/embed/uOt_hcg-RmA" loading="lazy" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item pb-4 lazy" data-src="https://player.vimeo.com/video/341031362" loading="lazy" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-4 textVideo">
                         <h2>Tantra Violento</h2> <p>Un videoclip producido en asociación con Coito Producciones. ADVERTENCIA: El contenido de este videoclip contiene imágenes susceptibles. Se recomienda discreción.</p>
@@ -133,7 +133,7 @@
             <div class="container">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9 col-lg-8">
-                        <iframe class="embed-responsive-item pb-4" src="https://www.youtube.com/embed/lRamTIUs5VE" loading="lazy" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item pb-4 lazy" data-src="https://www.youtube.com/embed/lRamTIUs5VE" loading="lazy" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-4 textVideo">
                         <h2>Chambacú</h2> <p>Versión adaptada por MOIRAS de la famosa opereta del maestro  Antonio María Peñaloza. Un viaje sonoro saturado, visualmente ambientado en la contraposición del imaginario colombiano: la lucha diaria entre lo que somos y lo que creemos ser.</p>
@@ -149,7 +149,7 @@
             <div class="container">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9 col-lg-8">
-                        <iframe class="embed-responsive-item pb-4" src="https://www.youtube.com/embed/_XSJdkj5pZA" loading="lazy" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item pb-4 lazy" data-src="https://www.youtube.com/embed/_XSJdkj5pZA" loading="lazy" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-4 textVideo">
                         <h2>El enano blanco de Haití</h2><p>Es el nombre incidental del primer ensamble en vivo de las bandas bogotanas Silente Experience y MOIRAS. En esta primera sesión confluyen las energías telúricas de ambos proyectos, produciendo una sinfonía disonante de matices variados, entre la más apacible tranquilidad, pasando por la energía tribal, hasta la cacofonía extrema.</p>
@@ -165,7 +165,7 @@
             <div class="container">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9 col-lg-8">
-                        <iframe class="embed-responsive-item pb-4" src="https://www.youtube.com/embed/S4Xx_kjw048" loading="lazy" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item pb-4 lazy" data-src="https://www.youtube.com/embed/S4Xx_kjw048" loading="lazy" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-4 textVideo">
                         <h2>Herbario Primitivo Digital</h2> <p>El ritual está listo. El chamán prepara la carne que se ofrendará al Software. Los ecos del canto visceral recorren el bosque digital. Las formas binarias se entremezclan para dar origen al herbario que habita en los Terabytes de la conciencia virtual.</p>
@@ -181,7 +181,7 @@
             <div class="container">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9 col-lg-8">
-                        <iframe class="embed-responsive-item pb-4" src="https://www.youtube.com/embed/OBzsdrP5nHo" loading="lazy" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item pb-4 lazy" data-src="https://www.youtube.com/embed/OBzsdrP5nHo" loading="lazy" allowfullscreen></iframe>
                     </div>
                     <div class="col-lg-4 textVideo">
                         <h2>Namaskar</h2> <p>grabada por MOIRAS el 30 de noviembre de 2019 en los estudios La Coneja Ciega, Bogotá. "... que se olviden de mi existencia y luchen por la de ellos mismos."</p>
@@ -217,5 +217,11 @@
     <!--bootstrap scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script>
+        const myLazyLoad = new LazyLoad({
+            elements_selector: ".lazy"
+        });
+    </script>
 </body>
 </html>

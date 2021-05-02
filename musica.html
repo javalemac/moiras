@@ -45,7 +45,7 @@
         <!--modal-->
         <div class="modal fade modal-fullscreen" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-content lazy">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -76,8 +76,8 @@
     <section id="hero_musica">
     <div class="container-fluid">
         <div class="row">
-            <div>
-                <img class="img-fluid" src="media/bg_musica.jpg" alt="musica">
+            <div class="d-flex justify-content-center">
+                <img class="img-fluid lazy" src="media/bg_musica.jpg" loading="lazy" alt="musica">
             </div>
         </div>
     </div>
@@ -101,7 +101,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex justify-content-md-center justify-content-center">
-                        <img class="img-fluid pb-4 imgEfi" src="media/efibuton.png" alt="efibuton">
+                        <img class="img-fluid pb-4 imgEfi lazy" data-src="media/efibuton.png" loading="lazy" alt="efibuton">
                     </div>
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
                         <h2>Efí Butón EP</h2> <p>(2020) Un viaje sonoro cargado de simbolismo ritual y sonidos disonantes. «(...) In a very special way, then, the sacred fungus was the offspring of the Morning Star». Grabado y producido por La Coneja Ciega.</p>
@@ -122,7 +122,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex justify-content-md-center justify-content-center order-lg-2">
-                        <img class="img-fluid pb-4 imgCham" src="media/chambacu.png" alt="chambacu">
+                        <img class="img-fluid pb-4 imgCham lazy" data-src="media/chambacu.png" loading="lazy" alt="chambacu">
                     </div>
                     <div class="col-lg-6 d-flex flex-column justify-content-center order-lg-1 text-lg-right">
                         <h2>Chambacú EP</h2> <p>(2020) Versión adaptada por MOIRAS de la famosa opereta del maestro Antonio María Peñaloza. Un viaje sonoro saturado, visualmente ambientado en la contraposición del imaginario colombiano: la lucha diaria entre lo que somos y lo que creemos ser. Grabado y producido por Coito Producciones.</p>
@@ -143,7 +143,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex justify-content-md-center justify-content-center">
-                        <img class="img-fluid pb-4 imgHerb" src="media/herbario.png" alt="herbario">
+                        <img class="img-fluid pb-4 imgHerb lazy" data-src="media/herbario.png" loading="lazy" alt="herbario">
                     </div>
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
                         <h2>Herbario Primitivo Digital EP</h2> <p>(2020) El ritual está listo. El chamán prepara la carne que se ofrendará al Software. Los ecos del canto visceral recorren el bosque digital. Las formas binarias se entremezclan para dar origen al herbario que habita en los Terabytes de la conciencia virtual. Herbario Primitivo Digital es el primer sencillo del 2020 de MOIRAS, una confluencia de sonidos arcaicos que cabalgan sobre el paroxismo eléctrico de texturas pluriformes. Grabado y producido por Coito Producciones.</p>
@@ -164,7 +164,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex justify-content-md-center justify-content-center order-lg-2">
-                        <img class="img-fluid pb-4 imgNam" src="media/namaskar.png" alt="namaskar">
+                        <img class="img-fluid pb-4 imgNam lazy" data-src="media/namaskar.png" loading="lazy" alt="namaskar">
                     </div>
                     <div class="col-lg-6 d-flex flex-column justify-content-center order-lg-1 text-lg-right">
                         <h2>Namaskar EP</h2> <p>(2019) "... que se olviden de mi existencia y luchen por la de ellos mismos". Grabado y producido por La Coneja Ciega.</p>
@@ -185,7 +185,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 d-flex justify-content-md-center justify-content-center">
-                        <img class="img-fluid pb-4 imgAta" src="media/ataudes.png" alt="ataudes">
+                        <img class="img-fluid pb-4 imgAta lazy" data-src="media/ataudes.png" loading="lazy" alt="ataudes">
                     </div>
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
                         <h2>Ataúdes de luz </h2> <p>(2018) Un viaje iniciatico por el universo MOIRAS. Paisajes tranquilos combinados con crujietes riffs. Un sonido inclasificable. Grabado y producido en La Coneja Ciega.</p>
@@ -226,5 +226,11 @@
     <!--bootstrap scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script>
+        const myLazyLoad = new LazyLoad({
+            elements_selector: ".lazy"
+        });
+    </script>
 </body>
 </html>

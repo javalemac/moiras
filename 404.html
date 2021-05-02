@@ -24,7 +24,7 @@
 </head>
 <body>
     <section id="mensaje404">
-        <div class="container-fluid">
+        <div class="container-fluid lazy">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 texto404">
@@ -38,5 +38,11 @@
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script>
+        const myLazyLoad = new LazyLoad({
+            elements_selector: ".lazy"
+        });
+    </script>
 </body>
 </html>

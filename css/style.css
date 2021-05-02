@@ -412,6 +412,16 @@ body h2 {
   line-height: 1.6em;
 }
 
+@media (max-width: 568px) {
+  #intro_musica {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  #intro_musica .titMus {
+    font-size: 3em;
+  }
+}
+
 #alb .albWhite {
   background-color: #fff;
 }
@@ -508,7 +518,7 @@ body h2 {
   padding-bottom: 2em;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 992px) {
   #video .textVideo {
     text-align: center;
   }
@@ -567,6 +577,14 @@ body h2 {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  -webkit-animation-name: bgMoiras2;
+          animation-name: bgMoiras2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 #bgMoiras2 .container-fluid .container {
@@ -619,6 +637,30 @@ body h2 {
           transform: scale(1.1);
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+}
+
+@-webkit-keyframes bgMoiras2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bgMoiras2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .imgCir:hover {
@@ -715,7 +757,7 @@ body h2 {
   font-weight: 700;
 }
 
-#respuesta .modal-content {
+#respuesta .container-fluid {
   background-image: url(../media/bg_respuesta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -723,27 +765,32 @@ body h2 {
   height: 100vh;
 }
 
-#respuesta .modal-content .modal-header {
-  border-bottom: 0px;
+#respuesta .container-fluid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#respuesta .modal-content .modal-header .close {
-  background-color: #ED213A;
-}
-
-#respuesta .modal-content .modal-body h2 {
+#respuesta .container-fluid .container .tRespuesta h2 {
   color: #000;
   font-size: 3em;
   font-weight: 700;
   font-style: italic;
 }
 
-#respuesta .modal-content .modal-body p {
+#respuesta .container-fluid .container .tRespuesta p {
   background-color: #fff;
 }
 
 @media (max-width: 567px) {
-  #respuesta .modal-content .modal-body {
+  #respuesta .container-fluid .container .tRespuesta {
     text-align: center;
   }
 }

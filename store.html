@@ -17,6 +17,7 @@
     <!--css-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="css/bootstrap4-modal-fullscreen.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!--favicon-->
     <link rel="icon" type="image/png" href="media/favicon.png">
     <title>Store MOIRAS</title>
@@ -34,7 +35,7 @@
             </div>
         </nav>
         <nav class="navbar fixed-bottom pabMenu">
-            <div class="container-fluid">
+            <div class="container-fluid animate__animated animate__fadeInUp">
                 <a class="navbar-brand tMusic" href="musica.html" class="d-flex justify-content-start">MÚSICA</a>
                 <div>
                     <a class="navbar-brand tVideo" href="videos.html">VIDEOS</a>
@@ -88,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2 class="titMus">STORE</h2>
+                    <h2 class="titMus animate__animated animate__fadeInLeft">STORE</h2>
                     <h1 class="textMus">¡Consigue los artículos de MOIRAS, que siempre quisiste! Si quieres llevártelo, ponte en contacto con nosotros para gestionar el envío.</h1>
                 </div>
                 <div class="col-lg-6 d-flex justify-content-md-center justify-content-center imgCir">
@@ -98,12 +99,11 @@
     </section>
     <!--intro-->
     <!--slider-->
-    <!--slider-->
     <section id="sliderStore">
         <div class="container pt-4">
             <div class="row">
                 <div class="col-lg-12">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide wow animate__animated animate__fadeInUp" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -161,7 +161,7 @@
     <footer id="footer">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-md-start justify-content-lg-start">
+                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-md-start justify-content-lg-start wow animate__animated animate__fadeInDown">
                     <div class="iconRedes">
                         <a href="https://www.facebook.com/moirasoficial" target="blank" class="pr-3"><img src="media/facebook.svg" alt="facebook" class="iFace"></a>
                         <a href="https://www.instagram.com/moirasoficial/" target="blank" class="pr-3"><img src="media/instagram.svg" alt="instagram" class="iInsta"></a>
@@ -170,7 +170,7 @@
 					<a href="https://www.youtube.com/channel/UCGuPDeyPAcqds-S8j7kcphQ" target="blank"><img src="media/youtube.svg" alt="youtube" class="iYou"></a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-md-end justify-content-lg-end">
+                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-md-end justify-content-lg-end wow animate__animated animate__fadeInUp">
                     <div class="tContacto">
                         <a href="contacto.html">Contacto</a>
                         <p>2021 ℗MOIRAS, Todos los derechos reservados</p>
@@ -180,7 +180,6 @@
         </div>
     </footer>
     <!--footer-->
-    
     <!--bootstrap scripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
@@ -189,6 +188,20 @@
         const myLazyLoad = new LazyLoad({
             elements_selector: ".lazy"
         });
+    </script>
+    <!--wow-->
+    <script src="js/wow.js"></script>
+    <script type="text/javascript">
+    wow = new WOW(
+                    {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       100,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
     </script>
 </body>
 </html>
